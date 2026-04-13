@@ -14,7 +14,7 @@ int main() {
     //     }
     //     cout << endl;
     // }
-
+    //----------number pattern-----
     int i,j;
 
     for(i=1; i <= 4; i++) {
@@ -25,4 +25,4 @@ int main() {
     }
 
     return 0;
-}
+};
