@@ -26,12 +26,21 @@ int main() {
 
     ----------Reverse pattern-------------
  
-    for(i = 4; i >= 1; i--) {
+    // for(i = 4; i >= 1; i--) {
+    //     for(j = 1; j <= i; j++) {
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+    ----------number triangle------------
+
+     for(i = 1; i <= 4; i++) {
         for(j = 1; j <= i; j++) {
-            printf("*");
+            printf("%d ", j);
         }
         printf("\n");
-    }
+     }
 
 
     return 0;
