@@ -15,7 +15,7 @@ int main() {
     //     cout << endl;
     // }
     //----------number pattern-----
-    int i,j;
+    // int i,j;
 
     // for(i=1; i <= 4; i++) {
     //     for(j = 1; j <= 1; j++) {
@@ -24,7 +24,7 @@ int main() {
     //     printf("\n");
     // }
 
-    ----------Reverse pattern-------------
+    // ----------Reverse pattern-------------
  
     // for(i = 4; i >= 1; i--) {
     //     for(j = 1; j <= i; j++) {
@@ -41,17 +41,30 @@ int main() {
     //     }
     //     printf("\n");
     //  }
-/
-    -----------square pattern---------------
 
-    n = 4;
+    // -----------square pattern---------------
 
-    for(i = 1; i <= n; i++) {
-        for(j = 1; j <= n; j++) {
-            printf("* ")
-        }
-        printf("\n");
-    }
+    // n = 4;
+
+    // for(i = 1; i <= n; i++) {
+    //     for(j = 1; j <= n; j++) {
+    //         printf("* ")
+    //     }
+    //     printf("\n");
+    // }
+
+
+
+// --------even and odd problem------------
+
+int num;
+cout << "Enter a number: ";
+cin >> num;
+
+if(num % 2 == 0)
+    cout << "Even";
+else
+    cout << "Odd";
 
     return 0;
 };
