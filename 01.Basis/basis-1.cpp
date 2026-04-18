@@ -55,16 +55,29 @@ int main() {
 
 
 
-// --------even and odd problem------------
+    // --------even and odd problem------------
 
-int num;
-cout << "Enter a number: ";
-cin >> num;
+    // int num;
+    // cout << "Enter a number: ";
+    // cin >> num;
 
-if(num % 2 == 0)
-    cout << "Even";
-else
-    cout << "Odd";
+    // if(num % 2 == 0)
+    //     cout << "Even";
+     // else
+     //     cout << "Odd";
+
+    // ----------Hollow square pattern----------
+    
+    int i,j,k;
+    for(i=5; i<=5; i++) {
+       for(j=1; j<=5-i; j++) {
+        printf("*");
+        for(k=1; k<=2i-1; k++) {
+            printf("*");
+        }
+       }    
+    
+    }
 
     return 0;
 };
