@@ -68,15 +68,28 @@ int main() {
 
     // ----------Hollow square pattern----------
     
-    int i,j,k;
-    for(i=5; i<=5; i++) {
-       for(j=1; j<=5-i; j++) {
-        printf("*");
-        for(k=1; k<=2i-1; k++) {
-            printf("*");
-        }
-       }    
+    // int i,j,k;
+    // for(i=5; i<=5; i++) {
+    //    for(j=1; j<=5-i; j++) {
+    //     printf("*");
+    //     for(k=1; k<=2i-1; k++) {
+    //         printf("*");
+    //     }
+    //    }    
     
+    // };
+
+    // -----------Pyramid pattern---------------
+
+    int n = 4;
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= n-1; j++) {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++){
+            cout << "* ";
+        }
+        cout << endl; 
     }
 
     return 0;
