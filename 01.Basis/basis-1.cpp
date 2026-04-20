@@ -81,15 +81,34 @@ int main() {
 
     // -----------Pyramid pattern---------------
 
-    int n = 4;
-    for(int i = 1; i <= n; i++) {
-        for(int j = 1; j <= n-1; j++) {
-            cout << " ";
+    // int n = 4;
+    // for(int i = 1; i <= n; i++) {
+    //     for(int j = 1; j <= n-1; j++) {
+    //         cout << " ";
+    //     }
+    //     for(int k = 1; k <= i; k++){
+    //         cout << "* ";
+    //     }
+    //     cout << endl; 
+    // }
+
+    
+    //----------zig-zag pattern-------
+     
+    int n = 9;
+    //columns
+
+    for(int i = 1; i <= 3; i++) {
+        for(int j = 1; j <= n; j++) {
+            if((i == 1 && j % 4 == 1)) ||
+            (i == 2 && j % 4 == 2) ||
+            (i == 3 && j % 4 == 3) {
+                cout << "*";
+            } else {
+                cout << " ";
+            }
         }
-        for(int k = 1; k <= i; k++){
-            cout << "* ";
-        }
-        cout << endl; 
+        cout << endl;
     }
 
     return 0;
