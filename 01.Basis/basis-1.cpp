@@ -136,13 +136,29 @@ int main() {
     
     //-------Array ka sum -------
 
-    int arr[5] = {1, 2, 3, 4, 5};
-    int sum = 0;
+    // int arr[5] = {1, 2, 3, 4, 5};
+    // int sum = 0;
 
+    // for(int i = 0; i < 5; i++) {
+    //      sum =+ arr[i];
+    // }
+    //  cout << "Sum = " << sum;
+     
+    //---------Simple array code---------
+
+    
+    int arr[5];  // array declare (size = 5)
+
+    // Input lena
+    cout << "Enter 5 numbers: ";
     for(int i = 0; i < 5; i++) {
-         sum =+ arr[i];
+        cin >> arr[i];
     }
-     cout << "Sum = " << sum;
 
+    // Output print karna
+    cout << "Array elements are: ";
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
     return 0;
 };
