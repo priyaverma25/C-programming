@@ -147,18 +147,27 @@ int main() {
     //---------Simple array code---------
 
     
-    int arr[5];  // array declare (size = 5)
+    // int arr[5];  // array declare (size = 5)
 
-    // Input lena
-    cout << "Enter 5 numbers: ";
-    for(int i = 0; i < 5; i++) {
-        cin >> arr[i];
-    }
+    // // Input lena
+    // cout << "Enter 5 numbers: ";
+    // for(int i = 0; i < 5; i++) {
+    //     cin >> arr[i];
+    // }
 
-    // Output print karna
-    cout << "Array elements are: ";
+    // // Output print karna
+    // cout << "Array elements are: ";
+    // for(int i = 0; i < 5; i++) {
+    //     cout << arr[i] << " ";
+    // }
+
+
+    //-------Array declare aur print kkarna--------
+    int arr[5] = {1, 2, 3, 4, 5};
+
     for(int i = 0; i < 5; i++) {
         cout << arr[i] << " ";
     }
+
     return 0;
 };
