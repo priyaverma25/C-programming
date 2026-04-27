@@ -163,11 +163,23 @@ int main() {
 
 
     //-------Array declare aur print kkarna--------
+    // int arr[5] = {1, 2, 3, 4, 5};
+
+    // for(int i = 0; i < 5; i++) {
+    //     cout << arr[i] << " ";
+    // }
+
+    //---Array ka sum nikalan-----
+
     int arr[5] = {1, 2, 3, 4, 5};
+    int sum = 0;
 
     for(int i = 0; i < 5; i++) {
-        cout << arr[i] << " ";
+        sum = sum + arr[i];
     }
+
+    cout << "Sum = " << sum;  
+
 
     return 0;
 };
