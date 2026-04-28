@@ -171,14 +171,36 @@ int main() {
 
     //---Array ka sum nikalan-----
 
-    int arr[5] = {1, 2, 3, 4, 5};
-    int sum = 0;
+    // int arr[5] = {1, 2, 3, 4, 5};
+    // int sum = 0;
+
+    // for(int i = 0; i < 5; i++) {
+    //     sum = sum + arr[i];
+    // }
+
+    // cout << "Sum = " << sum;  
+
+    //-----linear search--------
+
+    int arr[5] = {1, 3, 5, 7, 9};
+    int key;
+    bool found = false;
+
+    cout << "Enter number to search: ";
+    cin >> key;
 
     for(int i = 0; i < 5; i++) {
-        sum = sum + arr[i];
+        if(arr[i] == key) {
+            found = true;
+            break;
+        }
     }
 
-    cout << "Sum = " << sum;  
+    if(found)
+        cout << "Found";
+    else
+        cout << "Not Found";
+
 
 
     return 0;
