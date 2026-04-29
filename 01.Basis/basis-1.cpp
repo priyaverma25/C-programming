@@ -182,26 +182,37 @@ int main() {
 
     //-----linear search--------
 
-    int arr[5] = {1, 3, 5, 7, 9};
-    int key;
-    bool found = false;
+    // int arr[5] = {1, 3, 5, 7, 9};
+    // int key;
+    // bool found = false;
 
-    cout << "Enter number to search: ";
-    cin >> key;
+    // cout << "Enter number to search: ";
+    // cin >> key;
 
-    for(int i = 0; i < 5; i++) {
-        if(arr[i] == key) {
-            found = true;
-            break;
+    // for(int i = 0; i < 5; i++) {
+    //     if(arr[i] == key) {
+    //         found = true;
+    //         break;
+    //     }
+    // }
+
+    // if(found)
+    //     cout << "Found";
+    // else
+    //     cout << "Not Found";
+
+    //-------Smallest element------
+
+    int arr[5] = {8, 3, 10, 2, 7};
+    int min = arr[0];
+
+    for(int i = 1; i < 5; i++) {
+        if(arr[i] < min) {
+            min = arr[i];
         }
     }
 
-    if(found)
-        cout << "Found";
-    else
-        cout << "Not Found";
-
-
+    cout << "Smallest = " << min;
 
     return 0;
 };
