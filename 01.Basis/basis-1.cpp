@@ -203,16 +203,26 @@ int main() {
 
     //-------Smallest element------
 
-    int arr[5] = {8, 3, 10, 2, 7};
-    int min = arr[0];
+    // int arr[5] = {8, 3, 10, 2, 7};
+    // int min = arr[0];
 
-    for(int i = 1; i < 5; i++) {
-        if(arr[i] < min) {
-            min = arr[i];
-        }
+    // for(int i = 1; i < 5; i++) {
+    //     if(arr[i] < min) {
+    //         min = arr[i];
+    //     }
+    // }
+
+    // cout << "Smallest = " << min;
+
+    //---------Fibonacci Series------
+
+    int n = 10, a = 0, b = 1, next; 
+
+    for(int i = 0; i < n; i++) {
+        cout << a << " ";
+        next = a + b;
+        a = b;
+        b = next;
     }
-
-    cout << "Smallest = " << min;
-
     return 0;
 };
