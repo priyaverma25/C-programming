@@ -216,13 +216,34 @@ int main() {
 
     //---------Fibonacci Series------
 
-    int n = 10, a = 0, b = 1, next; 
+    // int n = 10, a = 0, b = 1, next; 
 
-    for(int i = 0; i < n; i++) {
-        cout << a << " ";
-        next = a + b;
-        a = b;
-        b = next;
+    // for(int i = 0; i < n; i++) {
+    //     cout << a << " ";
+    //     next = a + b;
+    //     a = b;
+    //     b = next;
+    // }
+
+    // --------find Largest Number in array---
+
+    int arr[5];
+
+    cout << "Enter 5 number: ";
+
+    for(int i = 0; i < 5; i++) {
+        cin >> arr[i];
     }
+
+    int largest = arr[0];
+
+    for(int i = 1; i < 5; i++) {
+        if(arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+
+    cout << "Largest number = " << largest;
+
     return 0;
 };
