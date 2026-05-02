@@ -227,23 +227,40 @@ int main() {
 
     // --------find Largest Number in array---
 
+    // int arr[5];
+
+    // cout << "Enter 5 number: ";
+
+    // for(int i = 0; i < 5; i++) {
+    //     cin >> arr[i];
+    // }
+
+    // int largest = arr[0];
+
+    // for(int i = 1; i < 5; i++) {
+    //     if(arr[i] > largest) {
+    //         largest = arr[i];
+    //     }
+    // }
+
+    // cout << "Largest number = " << largest;
+
+
+    //-------Array input and output ---
+
     int arr[5];
 
-    cout << "Enter 5 number: ";
+    cout << "Enter 5 numbers: ";
 
     for(int i = 0; i < 5; i++) {
         cin >> arr[i];
     }
 
-    int largest = arr[0];
+    cout << "Array elements are: ";
 
-    for(int i = 1; i < 5; i++) {
-        if(arr[i] > largest) {
-            largest = arr[i];
-        }
-    }
-
-    cout << "Largest number = " << largest;
-
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    } 
+    
     return 0;
 };
