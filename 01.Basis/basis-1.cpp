@@ -248,19 +248,42 @@ int main() {
 
     //-------Array input and output ---
 
-    int arr[5];
+    // int arr[5];
 
-    cout << "Enter 5 numbers: ";
+    // cout << "Enter 5 numbers: ";
 
-    for(int i = 0; i < 5; i++) {
-        cin >> arr[i];
-    }
+    // for(int i = 0; i < 5; i++) {
+    //     cin >> arr[i];
+    // }
 
-    cout << "Array elements are: ";
+    // cout << "Array elements are: ";
 
-    for(int i = 0; i < 5; i++) {
-        cout << arr[i] << " ";
-    } 
+    // for(int i = 0; i < 5; i++) {
+    //     cout << arr[i] << " ";
+    // } 
     
+    //  --------------Calculator program------------
+
+    int a, b;
+    char op;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Enter operator (+,-,*,/): ";
+    cin >> op;
+
+    if(op == '+')
+        cout << "Result = " << a + b;
+    else if(op == '-')
+        cout << "Result = " << a - b;
+    else if(op == '*')
+        cout << "Result = " << a * b;
+    else if(op == '/')
+        cout << "Result = " << a / b;
+    else
+        cout << "Invalid Operator";
+
+
     return 0;
 };
