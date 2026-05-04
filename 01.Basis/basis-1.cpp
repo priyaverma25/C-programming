@@ -264,25 +264,38 @@ int main() {
     
     //  --------------Calculator program------------
 
-    int a, b;
-    char op;
+    // int a, b;
+    // char op;
 
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
+    // cout << "Enter two numbers: ";
+    // cin >> a >> b;
 
-    cout << "Enter operator (+,-,*,/): ";
-    cin >> op;
+    // cout << "Enter operator (+,-,*,/): ";
+    // cin >> op;
 
-    if(op == '+')
-        cout << "Result = " << a + b;
-    else if(op == '-')
-        cout << "Result = " << a - b;
-    else if(op == '*')
-        cout << "Result = " << a * b;
-    else if(op == '/')
-        cout << "Result = " << a / b;
+    // if(op == '+')
+    //     cout << "Result = " << a + b;
+    // else if(op == '-')
+    //     cout << "Result = " << a - b;
+    // else if(op == '*')
+    //     cout << "Result = " << a * b;
+    // else if(op == '/')
+    //     cout << "Result = " << a / b;
+    // else
+    //     cout << "Invalid Operator";
+
+    //--------Number guessing  ------
+
+
+    int secret = 7, guess;
+
+    cout << "Guess the number: ";
+    cin >> guess;
+
+    if(guess == secret)
+        cout << "Correct Guess!";
     else
-        cout << "Invalid Operator";
+        cout << "Wrong Guess";
 
 
     return 0;
