@@ -287,16 +287,32 @@ int main() {
     //--------Number guessing  ------
 
 
-    int secret = 7, guess;
+    // int secret = 7, guess;
 
-    cout << "Guess the number: ";
-    cin >> guess;
+    // cout << "Guess the number: ";
+    // cin >> guess;
 
-    if(guess == secret)
-        cout << "Correct Guess!";
+    // if(guess == secret)
+    //     cout << "Correct Guess!";
+    // else
+    //     cout << "Wrong Guess";
+
+
+    //-------Student Grade System------ 
+
+    int marks;
+
+    cout << "Enter marks: ";
+    cin >> marks;
+
+    if(marks >= 90)
+        cout << "Grade A";
+    else if(marks >= 75)
+        cout << "Grade B";
+    else if(marks >= 50)
+        cout << "Grade C";
     else
-        cout << "Wrong Guess";
-
+        cout << "Fail";
 
     return 0;
 };
