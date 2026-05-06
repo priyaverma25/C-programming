@@ -316,14 +316,23 @@ int main() {
 
     //-------Table Program---------- 
     
-    int n;
+    // int n;
 
-    cout << "Enter number: ";
-    cin >> n;
+    // cout << "Enter number: ";
+    // cin >> n;
 
-    for(int i = 1; i <= 10; i++) {
-        cout << n << " x " << i << " = " << n * i << endl;
-    }
+    // for(int i = 1; i <= 10; i++) {
+    //     cout << n << " x " << i << " = " << n * i << endl;
+    // }
+
+    //-----ASCII Value program-----
+     
+    char ch;
+
+    cout << "Enter character: ";
+    cin >> ch;
+
+    cout << "ASCII Value = " << int(ch);
 
     return 0;
 };
