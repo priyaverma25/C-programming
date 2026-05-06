@@ -300,19 +300,30 @@ int main() {
 
     //-------Student Grade System------ 
 
-    int marks;
+    // int marks;
 
-    cout << "Enter marks: ";
-    cin >> marks;
+    // cout << "Enter marks: ";
+    // cin >> marks;
 
-    if(marks >= 90)
-        cout << "Grade A";
-    else if(marks >= 75)
-        cout << "Grade B";
-    else if(marks >= 50)
-        cout << "Grade C";
-    else
-        cout << "Fail";
+    // if(marks >= 90)
+    //     cout << "Grade A";
+    // else if(marks >= 75)
+    //     cout << "Grade B";
+    // else if(marks >= 50)
+    //     cout << "Grade C";
+    // else
+    //     cout << "Fail";
+
+    //-------Table Program---------- 
+    
+    int n;
+
+    cout << "Enter number: ";
+    cin >> n;
+
+    for(int i = 1; i <= 10; i++) {
+        cout << n << " x " << i << " = " << n * i << endl;
+    }
 
     return 0;
 };
