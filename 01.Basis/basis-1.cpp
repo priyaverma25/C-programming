@@ -327,12 +327,25 @@ int main() {
 
     //-----ASCII Value program-----
      
-    char ch;
+    // char ch;
 
-    cout << "Enter character: ";
-    cin >> ch;
+    // cout << "Enter character: ";
+    // cin >> ch;
 
-    cout << "ASCII Value = " << int(ch);
+    // cout << "ASCII Value = " << int(ch);
+
+    //---------Check positive or negative code---
+
+    int n;
+
+    cout << "Enter number: ";
+    cin >> n;
+
+    if(n >= 0)
+        cout << "Positive Number";
+    else
+        cout << "Negative Number";
+
 
     return 0;
 };
