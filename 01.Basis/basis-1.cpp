@@ -336,15 +336,25 @@ int main() {
 
     //---------Check positive or negative code---
 
-    int n;
+    // int n;
 
-    cout << "Enter number: ";
-    cin >> n;
+    // cout << "Enter number: ";
+    // cin >> n;
 
-    if(n >= 0)
-        cout << "Positive Number";
-    else
-        cout << "Negative Number";
+    // if(n >= 0)
+    //     cout << "Positive Number";
+    // else
+    //     cout << "Negative Number";
+
+
+    //--------Simple Interest------  
+
+    int p = 1000, r = 5, t = 2;
+    int si;
+
+    si = (p * r * t) / 100;
+
+    cout << "Simple Interest = " << si;
 
 
     return 0;
