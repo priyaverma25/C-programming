@@ -359,15 +359,28 @@ int main() {
 
     //-------Voting Eligibility checker-----
      
-    int age;
+    // int age;
 
-    cout << "Enter age: ";
-    cin >> age;
+    // cout << "Enter age: ";
+    // cin >> age;
 
-    if(age >= 18)
-        cout << "Eligible for Voting";
+    // if(age >= 18)
+    //     cout << "Eligible for Voting";
+    // else
+    //     cout << "Not Eligible";
+
+    //------Password checker-----
+
+    string password;
+
+    cout << "Enter Password: ";
+    cin >> password;
+
+    if(password.length() >= 8)
+        cout << "Strong Password";
     else
-        cout << "Not Eligible";
+        cout << "Weak Password";
+
 
     return 0;
 };
