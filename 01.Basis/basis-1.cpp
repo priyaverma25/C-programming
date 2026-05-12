@@ -371,15 +371,26 @@ int main() {
 
     //------Password checker-----
 
-    string password;
+    // string password;
 
-    cout << "Enter Password: ";
-    cin >> password;
+    // cout << "Enter Password: ";
+    // cin >> password;
 
-    if(password.length() >= 8)
-        cout << "Strong Password";
-    else
-        cout << "Weak Password";
+    // if(password.length() >= 8)
+    //     cout << "Strong Password";
+    // else
+    //     cout << "Weak Password";
+
+    //------Swap two number----
+
+    int a = 10, b = 20, temp;
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b;
 
 
     return 0;
