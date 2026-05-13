@@ -381,17 +381,29 @@ int main() {
     // else
     //     cout << "Weak Password";
 
-    //------Swap two number----
+    //------Swap two number---
+    
 
-    int a = 10, b = 20, temp;
+    // int a = 10, b = 20, temp;
 
-    temp = a;
-    a = b;
-    b = temp;
+    // temp = a;
+    // a = b;
+    // b = temp;
 
-    cout << "a = " << a << endl;
-    cout << "b = " << b;
+    // cout << "a = " << a << endl;
+    // cout << "b = " << b;
 
+    //------Voting Eligible ckecker------ 
+
+    int age;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    if(age >= 18)
+        cout << "Eligible for Voting";
+    else
+        cout << "Not Eligible";
 
     return 0;
 };
