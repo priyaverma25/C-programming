@@ -395,15 +395,24 @@ int main() {
 
     //------Voting Eligible ckecker------ 
 
-    int age;
+    // int age;
 
-    cout << "Enter age: ";
-    cin >> age;
+    // cout << "Enter age: ";
+    // cin >> age;
 
-    if(age >= 18)
-        cout << "Eligible for Voting";
-    else
-        cout << "Not Eligible";
+    // if(age >= 18)
+    //     cout << "Eligible for Voting";
+    // else
+    //     cout << "Not Eligible";
+
+    //------simple interest---- 
+
+    int p = 1000, r = 5, t = 2;
+    int si;
+
+    si = (p * r * t) / 100;
+
+    cout << "Simple Interest = " << si;
 
     return 0;
 };
