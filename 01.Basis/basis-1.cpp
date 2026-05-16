@@ -416,27 +416,47 @@ int main() {
 
     //---------Mini banking system------
 
-    int balance = 10000, choice, amount;
+    // int balance = 10000, choice, amount;
 
-    cout << "1. Deposit\n2. Withdraw\n";
-    cin >> choice;
+    // cout << "1. Deposit\n2. Withdraw\n";
+    // cin >> choice;
 
-    if(choice == 1) {
-        cout << "Enter amount: ";
-        cin >> amount;
-        balance += amount;
+    // if(choice == 1) {
+    //     cout << "Enter amount: ";
+    //     cin >> amount;
+    //     balance += amount;
+    // }
+    // else if(choice == 2) {
+    //     cout << "Enter amount: ";
+    //     cin >> amount;
+
+    //     if(amount <= balance)
+    //         balance -= amount;
+    //     else
+    //         cout << "Insufficient Balance";
+    // }
+
+    // cout << "Current Balance = " << balance;
+
+    //------Palindorme number program----- 
+
+    int n, rev = 0, rem, temp;
+
+    cout << "Enter number: ";
+    cin >> n;
+
+    temp = n;
+
+    while(n > 0) {
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n = n / 10;
     }
-    else if(choice == 2) {
-        cout << "Enter amount: ";
-        cin >> amount;
 
-        if(amount <= balance)
-            balance -= amount;
-        else
-            cout << "Insufficient Balance";
-    }
-
-    cout << "Current Balance = " << balance;
+    if(temp == rev)
+        cout << "Palindrome Number";
+    else
+        cout << "Not Palindrome";
 
     return 0;
 };
