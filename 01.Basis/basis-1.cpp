@@ -440,23 +440,58 @@ int main() {
 
     //------Palindorme number program----- 
 
-    int n, rev = 0, rem, temp;
+    // int n, rev = 0, rem, temp;
 
-    cout << "Enter number: ";
-    cin >> n;
+    // cout << "Enter number: ";
+    // cin >> n;
 
-    temp = n;
+    // temp = n;
 
-    while(n > 0) {
-        rem = n % 10;
-        rev = rev * 10 + rem;
-        n = n / 10;
+    // while(n > 0) {
+    //     rem = n % 10;
+    //     rev = rev * 10 + rem;
+    //     n = n / 10;
+    // }
+
+    // if(temp == rev)
+    //     cout << "Palindrome Number";
+    // else
+    //     cout << "Not Palindrome";
+
+    // --------Matrix Addition------
+
+    int a[2][2], b[2][2], sum[2][2];
+
+    cout << "Enter first matrix:\n";
+
+    for(int i=0;i<2;i++) {
+        for(int j=0;j<2;j++) {
+            cin >> a[i][j];
+        }
     }
 
-    if(temp == rev)
-        cout << "Palindrome Number";
-    else
-        cout << "Not Palindrome";
+    cout << "Enter second matrix:\n";
+
+    for(int i=0;i<2;i++) {
+        for(int j=0;j<2;j++) {
+            cin >> b[i][j];
+        }
+    }
+
+    for(int i=0;i<2;i++) {
+        for(int j=0;j<2;j++) {
+            sum[i][j] = a[i][j] + b[i][j];
+        }
+    }
+
+    cout << "Sum Matrix:\n";
+
+    for(int i=0;i<2;i++) {
+        for(int j=0;j<2;j++) {
+            cout << sum[i][j] << " ";
+        }
+        cout << endl;
+    }
 
     return 0;
 };
