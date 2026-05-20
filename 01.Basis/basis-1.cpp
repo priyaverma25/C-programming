@@ -517,28 +517,41 @@ int main() {
   
     //-----Bubble short --
 
-    int a[5], i, j, temp;
+    // int a[5], i, j, temp;
 
-    printf("Enter 5 numbers:\n");
+    // printf("Enter 5 numbers:\n");
 
-    for(i = 0; i < 5; i++)
-        scanf("%d", &a[i]);
+    // for(i = 0; i < 5; i++)
+    //     scanf("%d", &a[i]);
 
-    for(i = 0; i < 4; i++) {
-        for(j = 0; j < 4 - i; j++) {
-            if(a[j] > a[j + 1]) {
-                temp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = temp;
-            }
-        }
-    }
+    // for(i = 0; i < 4; i++) {
+    //     for(j = 0; j < 4 - i; j++) {
+    //         if(a[j] > a[j + 1]) {
+    //             temp = a[j];
+    //             a[j] = a[j + 1];
+    //             a[j + 1] = temp;
+    //         }
+    //     }
+    // }
 
-    printf("Sorted Array:\n");
+    // printf("Sorted Array:\n");
 
-    for(i = 0; i < 5; i++)
-        printf("%d ", a[i])
+    // for(i = 0; i < 5; i++)
+    //     printf("%d ", a[i])
 
+
+    //-----Largest among three numbers--- 
+
+    int a, b, c;
+
+    cin >> a >> b >> c;
+
+    if(a > b && a > c)
+        cout << "Largest = " << a;
+    else if(b > c)
+        cout << "Largest = " << b;
+    else
+        cout << "Largest = " << c;
 
     return 0;
 };
