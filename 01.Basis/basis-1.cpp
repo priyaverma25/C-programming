@@ -542,16 +542,27 @@ int main() {
 
     //-----Largest among three numbers--- 
 
-    int a, b, c;
+    // int a, b, c;
 
-    cin >> a >> b >> c;
+    // cin >> a >> b >> c;
 
-    if(a > b && a > c)
-        cout << "Largest = " << a;
-    else if(b > c)
-        cout << "Largest = " << b;
-    else
-        cout << "Largest = " << c;
+    // if(a > b && a > c)
+    //     cout << "Largest = " << a;
+    // else if(b > c)
+    //     cout << "Largest = " << b;
+    // else
+    //     cout << "Largest = " << c;
 
+
+    //  coding problem
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Addition = " << a + b << endl;
+    cout << "Subtraction = " << a - b << endl;
+    cout << "Multiplication = " << a * b << endl;
+    cout << "Division = " << a / b << endl;
     return 0;
 };
