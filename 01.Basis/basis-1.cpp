@@ -555,14 +555,32 @@ int main() {
 
 
     //  coding problem
-    int a, b;
+    // int a, b;
 
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
+    // cout << "Enter two numbers: ";
+    // cin >> a >> b;
 
-    cout << "Addition = " << a + b << endl;
-    cout << "Subtraction = " << a - b << endl;
-    cout << "Multiplication = " << a * b << endl;
-    cout << "Division = " << a / b << endl;
+    // cout << "Addition = " << a + b << endl;
+    // cout << "Subtraction = " << a - b << endl;
+    // cout << "Multiplication = " << a * b << endl;
+    // cout << "Division = " << a / b << endl;
+
+
+
+    //-----problem 
+
+
+    string name;
+    int age;
+
+    cout << "Enter Your Name: ";
+    cin >> name;
+
+    cout << "Enter Your Age: ";
+    cin >> age;
+
+    cout << "\nWelcome " << name << "!" << endl;
+    cout << "Your age is " << age << endl;
+
     return 0;
 };
