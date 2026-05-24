@@ -570,17 +570,40 @@ int main() {
     //-----problem 
 
 
-    string name;
-    int age;
+    // string name;
+    // int age;
 
-    cout << "Enter Your Name: ";
-    cin >> name;
+    // cout << "Enter Your Name: ";
+    // cin >> name;
 
-    cout << "Enter Your Age: ";
-    cin >> age;
+    // cout << "Enter Your Age: ";
+    // cin >> age;
 
-    cout << "\nWelcome " << name << "!" << endl;
-    cout << "Your age is " << age << endl;
+    // cout << "\nWelcome " << name << "!" << endl;
+    // cout << "Your age is " << age << endl;
+
+    //-------code  
+
+    int num, reverse = 0, rem;
+
+    cout << "Enter a Number: ";
+    cin >> num;
+
+    int original = num;
+
+    while(num != 0) {
+        rem = num % 10;
+        reverse = reverse * 10 + rem;
+        num /= 10;
+    }
+
+    cout << "Reversed Number = " << reverse << endl;
+
+    if(original == reverse)
+        cout << "Palindrome Number";
+    else
+        cout << "Not a Palindrome Number";
+
 
     return 0;
 };
