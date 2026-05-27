@@ -584,26 +584,62 @@ int main() {
 
     //-------code  
 
-    int num, reverse = 0, rem;
+    // int num, reverse = 0, rem;
 
-    cout << "Enter a Number: ";
-    cin >> num;
+    // cout << "Enter a Number: ";
+    // cin >> num;
 
-    int original = num;
+    // int original = num;
 
-    while(num != 0) {
-        rem = num % 10;
-        reverse = reverse * 10 + rem;
-        num /= 10;
+    // while(num != 0) {
+    //     rem = num % 10;
+    //     reverse = reverse * 10 + rem;
+    //     num /= 10;
+    // }
+
+    // cout << "Reversed Number = " << reverse << endl;
+
+    // if(original == reverse)
+    //     cout << "Palindrome Number";
+    // else
+    //     cout << "Not a Palindrome Number";
+
+
+
+
+    //----typing speed----  
+          
+         
+    string sentence = "Coding is fun and improves problem solving skills";
+
+    string userInput;
+
+    cout << "===== Typing Speed Test =====\n\n";
+    cout << "Type this sentence:\n";
+    cout << sentence << endl << endl;
+
+    time_t start, end;
+
+    time(&start);
+
+    cin.ignore();
+    getline(cin, userInput);
+
+    time(&end);
+
+    double timeTaken = difftime(end, start);
+
+    cout << "\nTime Taken: " << timeTaken << " seconds\n";
+
+    if(userInput == sentence) {
+        cout << "Typing Correct!\n";
+
+        double speed = sentence.length() / timeTaken;
+
+        cout << "Typing Speed: " << speed << " characters/sec\n";
     }
-
-    cout << "Reversed Number = " << reverse << endl;
-
-    if(original == reverse)
-        cout << "Palindrome Number";
-    else
-        cout << "Not a Palindrome Number";
-
-
+    else {
+        cout << "Typing Mistakes Found!\n";
+    }
     return 0;
 };
