@@ -610,36 +610,59 @@ int main() {
     //----typing speed----  
           
          
-    string sentence = "Coding is fun and improves problem solving skills";
+    // string sentence = "Coding is fun and improves problem solving skills";
 
-    string userInput;
+    // string userInput;
 
-    cout << "===== Typing Speed Test =====\n\n";
-    cout << "Type this sentence:\n";
-    cout << sentence << endl << endl;
+    // cout << "===== Typing Speed Test =====\n\n";
+    // cout << "Type this sentence:\n";
+    // cout << sentence << endl << endl;
 
-    time_t start, end;
+    // time_t start, end;
 
-    time(&start);
+    // time(&start);
 
-    cin.ignore();
-    getline(cin, userInput);
+    // cin.ignore();
+    // getline(cin, userInput);
 
-    time(&end);
+    // time(&end);
 
-    double timeTaken = difftime(end, start);
+    // double timeTaken = difftime(end, start);
 
-    cout << "\nTime Taken: " << timeTaken << " seconds\n";
+    // cout << "\nTime Taken: " << timeTaken << " seconds\n";
 
-    if(userInput == sentence) {
-        cout << "Typing Correct!\n";
+    // if(userInput == sentence) {
+    //     cout << "Typing Correct!\n";
 
-        double speed = sentence.length() / timeTaken;
+    //     double speed = sentence.length() / timeTaken;
 
-        cout << "Typing Speed: " << speed << " characters/sec\n";
-    }
-    else {
-        cout << "Typing Mistakes Found!\n";
+    //     cout << "Typing Speed: " << speed << " characters/sec\n";
+    // }
+    // else {
+    //     cout << "Typing Mistakes Found!\n";
+    // }
+
+
+    //-------Pattern size----------
+    
+    int size;
+
+    cout << "Enter QR pattern size: ";
+    cin >> size;
+
+    cout << "\nGenerated Pattern:\n\n";
+
+    for(int i = 0; i < size; i++) {
+
+        for(int j = 0; j < size; j++) {
+
+            if((i + j) % 2 == 0)
+                cout << "##";
+            else
+                cout << "  ";
+        }
+
+        cout << endl;
     }
     return 0;
 };
