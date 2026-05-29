@@ -645,24 +645,53 @@ int main() {
 
     //-------Pattern size----------
     
-    int size;
+    // int size;
 
-    cout << "Enter QR pattern size: ";
-    cin >> size;
+    // cout << "Enter QR pattern size: ";
+    // cin >> size;
 
-    cout << "\nGenerated Pattern:\n\n";
+    // cout << "\nGenerated Pattern:\n\n";
 
-    for(int i = 0; i < size; i++) {
+    // for(int i = 0; i < size; i++) {
 
-        for(int j = 0; j < size; j++) {
+    //     for(int j = 0; j < size; j++) {
 
-            if((i + j) % 2 == 0)
-                cout << "##";
-            else
-                cout << "  ";
-        }
+    //         if((i + j) % 2 == 0)
+    //             cout << "##";
+    //         else
+    //             cout << "  ";
+    //     }
 
-        cout << endl;
+    //     cout << endl;
+    // }
+
+    int marks, char grade;
+    cout <<  " Enter the marks between 0 to 100: ";
+    cin >> marks;
+    if (marks < 0 || marks>100) {
+        cout << "\nInvalid Score " << endl;
+        return 0;
     }
+    switch (marks / 10) {
+        case 10;
+        case 9;
+        grade = 'A';
+        break;
+        case 8; 
+        grade = 'B';
+        break;
+        case 7;
+        grade = 'c';
+        break;
+        case 6;
+        grade = 'D';
+        break;
+        case 5;
+        grade = 'E';
+        break;
+        default:
+        grade = 'F';
+    }
+    cout << "\nGrade: " << grade << endl;
     return 0;
 };
