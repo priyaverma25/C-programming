@@ -665,33 +665,53 @@ int main() {
     //     cout << endl;
     // }
 
-    int marks, char grade;
-    cout <<  " Enter the marks between 0 to 100: ";
-    cin >> marks;
-    if (marks < 0 || marks>100) {
-        cout << "\nInvalid Score " << endl;
-        return 0;
-    }
-    switch (marks / 10) {
-        case 10;
-        case 9;
-        grade = 'A';
-        break;
-        case 8; 
-        grade = 'B';
-        break;
-        case 7;
-        grade = 'c';
-        break;
-        case 6;
-        grade = 'D';
-        break;
-        case 5;
-        grade = 'E';
-        break;
-        default:
-        grade = 'F';
-    }
-    cout << "\nGrade: " << grade << endl;
+    //-----marks grade problem
+    
+    // int marks, char grade;
+    // cout <<  " Enter the marks between 0 to 100: ";
+    // cin >> marks;
+    // if (marks < 0 || marks>100) {
+    //     cout << "\nInvalid Score " << endl;
+    //     return 0;
+    // }
+    // switch (marks / 10) {
+    //     case 10;
+    //     case 9;
+    //     grade = 'A';
+    //     break;
+    //     case 8; 
+    //     grade = 'B';
+    //     break;
+    //     case 7;
+    //     grade = 'c';
+    //     break;
+    //     case 6;
+    //     grade = 'D';
+    //     break;
+    //     case 5;
+    //     grade = 'E';
+    //     break;
+    //     default:
+    //     grade = 'F';
+    // }
+    // cout << "\nGrade: " << grade << endl;
+
+    //-------Summation notation---
+                                          
+    int n, i;
+    double sum;
+    cout << "Enter a number: ";
+    cin >> n;
+    i = 1;
+    sum = 0;
+    do
+    {
+       sum = sum + pow(i, 3)-2;
+       i = i + 1;
+    } While(i <= n);
+    cout << "Sum: " 
+         << sum 
+         << endl;  
+
     return 0;
 };
