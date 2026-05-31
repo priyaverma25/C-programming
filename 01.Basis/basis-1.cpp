@@ -698,20 +698,33 @@ int main() {
 
     //-------Summation notation---
                                           
-    int n, i;
-    double sum;
-    cout << "Enter a number: ";
-    cin >> n;
-    i = 1;
-    sum = 0;
-    do
-    {
-       sum = sum + pow(i, 3)-2;
-       i = i + 1;
-    } While(i <= n);
-    cout << "Sum: " 
-         << sum 
-         << endl;  
+    // int n, i;
+    // double sum;
+    // cout << "Enter a number: ";
+    // cin >> n;
+    // i = 1;
+    // sum = 0;
+    // do
+    // {
+    //    sum = sum + pow(i, 3)-2;
+    //    i = i + 1;
+    // } While(i <= n);
+    // cout << "Sum: " 
+    //      << sum 
+    //      << endl;  
 
+
+    //----- random qoute problem
+    
+    int main() {
+    string quotes[] = {
+        "Never Give Up",
+        "Keep Learning",
+        "Stay Focused",
+        "Work Hard"
+    };
+
+    srand(time(0));
+    cout << quotes[rand() % 4];
     return 0;
 };
