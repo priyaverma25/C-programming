@@ -716,15 +716,44 @@ int main() {
 
     //----- random qoute problem
     
-    int main() {
-    string quotes[] = {
-        "Never Give Up",
-        "Keep Learning",
-        "Stay Focused",
-        "Work Hard"
-    };
+    // int main() {
+    // string quotes[] = {
+    //     "Never Give Up",
+    //     "Keep Learning",
+    //     "Stay Focused",
+    //     "Work Hard"
+    // };
 
-    srand(time(0));
-    cout << quotes[rand() % 4];
+    // srand(time(0));
+    // cout << quotes[rand() % 4];
+    
     return 0;
-};
+}
+
+
+   //----Cout The Digits
+
+    int count_digits(int number);
+    int maim() {
+          cout << "The number 585992";
+          cout << " has " << count_digits(585992) <<" digits." << endl;
+          cout << "The number 632";
+          cout << " has " << count_digits(632) << " digits." << endl;
+          return 0;     
+    }
+    int count_digits(int number)
+    {
+        if (number == 0)
+        {
+            return 1;
+        }
+        int digits = 0;
+        while (number != 0)
+        {
+            number = number / 10;
+            digits++;
+        }
+        return digits;
+    }
+
+
