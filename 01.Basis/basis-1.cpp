@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+// int main() {
     // cout<<"Hello World"<<endl;
     // cout<<"hello Duniya"<<endl;
 
@@ -727,33 +727,65 @@ int main() {
     // srand(time(0));
     // cout << quotes[rand() % 4];
     
-    return 0;
-}
+//     return 0;
+// }
 
 
    //----Cout The Digits
 
-    int count_digits(int number);
-    int maim() {
-          cout << "The number 585992";
-          cout << " has " << count_digits(585992) <<" digits." << endl;
-          cout << "The number 632";
-          cout << " has " << count_digits(632) << " digits." << endl;
-          return 0;     
-    }
-    int count_digits(int number)
-    {
-        if (number == 0)
-        {
-            return 1;
-        }
-        int digits = 0;
-        while (number != 0)
-        {
-            number = number / 10;
-            digits++;
-        }
-        return digits;
-    }
+    // int count_digits(int number);
+    // int maim() {
+    //       cout << "The number 585992";
+    //       cout << " has " << count_digits(585992) <<" digits." << endl;
+    //       cout << "The number 632";
+    //       cout << " has " << count_digits(632) << " digits." << endl;
+    //       return 0;     
+    // }
+    // int count_digits(int number)
+    // {
+    //     if (number == 0)
+    //     {
+    //         return 1;
+    //     }
+    //     int digits = 0;
+    //     while (number != 0)
+    //     {
+    //         number = number / 10;
+    //         digits++;
+    //     }
+    //     return digits;
+    // }
 
 
+    //---DOUBLE FACTORIAL
+    
+ 
+    int main() {
+      int n;
+      int F = 1;
+      cout << "*DOUBLE FACTORIAL PROGRAM*\n\n";
+      cout << "Enter the number: ";
+      cin >> n;
+      if (n < 0) {
+        cout << "Factorial is not possible" << endl;
+      }
+      else {
+          if (n % 2 == 0) {
+            for (int i = 2; i <= n; i++) {
+                if (i % 2 == 0) {
+                    F = F * i;
+                }
+            }
+            cout << n << "!! = " << F << endl;
+          }
+           if (n % 2 != 0) {
+            for (int i =1; i <= n; i++) {
+                if (i % 2 != 0) {
+                    F = F * i;
+                }
+            }
+            cout << n << "!! " << F << endl;
+          }
+        }
+      }
+    }
