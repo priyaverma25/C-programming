@@ -760,32 +760,59 @@ using namespace std;
     //---DOUBLE FACTORIAL
     
  
-    int main() {
-      int n;
-      int F = 1;
-      cout << "*DOUBLE FACTORIAL PROGRAM*\n\n";
-      cout << "Enter the number: ";
-      cin >> n;
-      if (n < 0) {
-        cout << "Factorial is not possible" << endl;
-      }
-      else {
-          if (n % 2 == 0) {
-            for (int i = 2; i <= n; i++) {
-                if (i % 2 == 0) {
-                    F = F * i;
-                }
-            }
-            cout << n << "!! = " << F << endl;
-          }
-           if (n % 2 != 0) {
-            for (int i =1; i <= n; i++) {
-                if (i % 2 != 0) {
-                    F = F * i;
-                }
-            }
-            cout << n << "!! " << F << endl;
-          }
+    // int main() {
+    //   int n;
+    //   int F = 1;
+    //   cout << "*DOUBLE FACTORIAL PROGRAM*\n\n";
+    //   cout << "Enter the number: ";
+    //   cin >> n;
+    //   if (n < 0) {
+    //     cout << "Factorial is not possible" << endl;
+    //   }
+    //   else {
+    //       if (n % 2 == 0) {
+    //         for (int i = 2; i <= n; i++) {
+    //             if (i % 2 == 0) {
+    //                 F = F * i;
+    //             }
+    //         }
+    //         cout << n << "!! = " << F << endl;
+    //       }
+    //        if (n % 2 != 0) {
+    //         for (int i =1; i <= n; i++) {
+    //             if (i % 2 != 0) {
+    //                 F = F * i;
+    //             }
+    //         }
+    //         cout << n << "!! " << F << endl;
+    //       }
+    //     }
+    //   }
+    // }
+
+//-----Hollow squre pattern--------  
+
+int main() {
+    int n = 5;
+
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= i; j++) {
+            if(i == n || j == 1 || j == i)
+                cout << "* ";
+            else
+                cout << "  ";
         }
-      }
+        cout << endl;
     }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
