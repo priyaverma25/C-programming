@@ -810,17 +810,31 @@ using namespace std;
    
  //----Array ko reverse print 
 
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5};
+// int main() {
+//     int arr[5] = {1, 2, 3, 4, 5};
 
-    for(int i = 4; i >= 0; i--) {
-        cout << arr[i] << " ";
+//     for(int i = 4; i >= 0; i--) {
+//         cout << arr[i] << " ";
+//     }
+
+//     return 0;
+// }
+  
+// --smsllest element find 
+
+int main() {
+    int arr[5] = {12, 45, 7, 89, 23};
+    int min = arr[0];
+
+    for(int i = 1; i < 5; i++) {
+        if(arr[i] < min)
+            min = arr[i];
     }
+
+    cout << "Smallest = " << min;
 
     return 0;
 }
-
-
 
 
 
